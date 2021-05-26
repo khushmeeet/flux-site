@@ -1,0 +1,9 @@
+{
+    "site": {
+        "email": "khushmeet@hey.com",
+        "github": "khushmeeet",
+        "title": "Flux",
+        "twitter": "@khushmeeet"
+    },
+    "minify_css": true
+}
