@@ -1,0 +1,14 @@
+body {
+    margin: 20px;
+    padding: 10px;
+}
+
+#header {
+    display: inline-flex;
+    div {
+        margin: auto 0px auto auto;
+        a {
+            padding: 7px;
+        }
+    }
+}
