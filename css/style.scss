@@ -3,12 +3,36 @@ body {
     padding: 10px;
 }
 
+section {
+    padding: 5px;
+}
+
+footer {
+    padding: 5px;
+}
+
 #header {
     display: inline-flex;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: auto auto auto 4px;
+    }
     div {
         margin: auto 0px auto auto;
+        a:first-child {
+            margin: auto 15px auto auto;
+        }
         a {
-            padding: 7px;
+            padding: 4px;
         }
     }
+}
+
+#index-section {
+    margin-top: 30px;
 }

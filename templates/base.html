@@ -13,21 +13,24 @@
     {% endif %}
 </head>
 <body>
-    <header class="container">
+    <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-8" id="header">
-                <img src="{{ GetPath("flux.png") }}" alt="Flux">
-                <div>
-                    <a href="">Docs</a>
-                    <a href="">CLI</a>
-                </div>
+            <div class="col-md-8">
+                <header id="header">
+                    <img src="{{ GetPath("flux.svg") }}" alt="Flux">
+                    <div>
+                        <a href="">Docs</a>
+                        <a href="">CLI</a>
+                    </div>
+                </header>
+                {% block content %} {% endblock %}
+                {% include "footer.html" %}
             </div>
             <div class="col-md-2"></div>
         </div>
-    </header>
-    {% block content %} {% endblock %}
-    {% include "footer.html" %}
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 </html>
