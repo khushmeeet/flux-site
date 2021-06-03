@@ -1,6 +1,7 @@
 body {
     margin: 20px;
     padding: 10px;
+    height: 100%;
 }
 
 section {
@@ -8,7 +9,16 @@ section {
 }
 
 footer {
+    text-align: center;
     padding: 5px;
+    // margin-top: auto;
+    flex-shrink: 0;
+}
+
+#main-column {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
 }
 
 #header {
@@ -16,11 +26,14 @@ footer {
     padding: 5px;
     margin-bottom: 20px;
     width: 100%;
-    img {
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin: auto auto auto 4px;
+    flex-shrink: 0;
+    a {
+        img {
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin: auto auto auto 4px;
+       }
     }
     div {
         margin: auto 0px auto auto;
@@ -35,4 +48,5 @@ footer {
 
 #index-section {
     margin-top: 30px;
+    flex: 1 0 auto;
 }

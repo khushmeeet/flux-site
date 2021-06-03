@@ -16,12 +16,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-8">
+            <div class="col-md-8" id="main-column">
                 <header id="header">
-                    <img src="{{ GetPath("flux.svg") }}" alt="Flux">
+                    <a href="/">
+                        <img src="{{ GetPath("flux.svg") }}" alt="Flux">
+                    </a>
                     <div>
-                        <a href="">Docs</a>
-                        <a href="">CLI</a>
+                        <a href="/docs/">Docs</a>
+                        <a href="/cli/">CLI</a>
                     </div>
                 </header>
                 {% block content %} {% endblock %}
