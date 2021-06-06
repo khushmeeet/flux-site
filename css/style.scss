@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&display=swap');
+
 body {
     margin: 20px;
     padding: 10px;
     height: 100%;
     background-color: #FAF9F5;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.header-font {
+    font-weight: 600;
+    font-family: 'Newsreader', serif;
+    
+}
+
+// h1, h3 {
+//     font-family: 'Signika Negative', sans-serif;
+// }
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    font-family: 'Newsreader', serif;
+    font-size: medium;
+    margin-top: 1.3em;
+    font-weight: 500;
 }
 
 section {
@@ -40,9 +69,11 @@ footer {
         margin: auto 0px auto auto;
         a:first-child {
             margin: auto 15px auto auto;
+            font-family: 'Signika Negative', sans-serif;
         }
         a {
             padding: 4px;
+            font-family: 'Signika Negative', sans-serif;
         }
     }
 }
