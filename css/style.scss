@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
+$grey: #aaaaaa;
+$deep-grey: #9b9b9b;
 
 body {
     margin: 20px;
@@ -13,14 +16,11 @@ h1 {
 }
 
 .header-font {
-    font-weight: 600;
+    font-weight: 700;
     font-family: 'Newsreader', serif;
+    line-height: 1.2em;
     
 }
-
-// h1, h3 {
-//     font-family: 'Signika Negative', sans-serif;
-// }
 
 h3 {
     margin-top: 50px;
@@ -34,6 +34,17 @@ p, ul {
     font-weight: 500;
 }
 
+ a {
+    color: black;
+    font-weight: 500;
+ }
+
+ a:hover {
+     color: black;
+     font-weight: 600;
+
+ }
+
 section {
     padding: 5px;
 }
@@ -41,8 +52,21 @@ section {
 footer {
     text-align: center;
     padding: 5px;
-    // margin-top: auto;
     flex-shrink: 0;
+    p {
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        color: $grey;
+        font-size: 1.1em;
+        font-weight: 500;
+        letter-spacing: -1px;
+        a {
+            color: $grey;
+        }
+        a:hover {
+            color: $deep-grey;
+        }
+    }
 }
 
 #main-column {
