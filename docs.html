@@ -1,6 +1,25 @@
 {% extends "templates/base.html" %}
 {% block content %}
 <section id="index-section">
-    <h1>Docs</h1>
+    <h1>Documentation</h1>
+    <p>
+        Flux documentation contains detailed guide on creating static sites. For using Flux CLI, checkout <a href="/cli/">CLI</a>reference.
+    </p>
+    <h3><a href="">Directory Structure</a></h3>
+    <p>
+        Project structure for Flux site and how to organize site data and assets.
+    </p>
+    <h3><a href="">Flux Pages</a></h3>
+    <p>
+        Flux page defines a single blog page written in markdown with frontmatter for metadata.
+    </p>
+    <h3><a href="">Templating</a></h3>
+    <p>
+        Flux uses Jinja style templating engine, powered by <a href="">pongo2</a>.
+    </p>
+    <h3><a href="">Flux Configuration</a></h3>
+    <p>
+        Flux has a <code>config.json</code> file, which defines global level metadata.
+    </p>
 </section>
 {% endblock %}
