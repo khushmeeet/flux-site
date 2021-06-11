@@ -34,15 +34,14 @@ p, ul {
     font-weight: 500;
 }
 
- a {
+a {
     color: black;
     font-weight: 500;
  }
 
- a:hover {
-     color: black;
-     font-weight: 600;
-
+section a:hover {
+    color: black;
+    font-weight: 600;
  }
 
 section {
@@ -96,8 +95,15 @@ footer {
             font-family: 'Signika Negative', sans-serif;
         }
         a {
-            padding: 4px;
+            text-decoration: none;
+            padding: 5px 9px;
             font-family: 'Signika Negative', sans-serif;
+            color: white;
+            background-color: #323232;
+            border: 1px solid #323232;
+            border-radius: 4px;
+            font-size: 0.9em;
+
         }
     }
 }
