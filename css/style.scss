@@ -15,14 +15,7 @@ h1 {
     font-size: 3em;
 }
 
-.header-font {
-    font-weight: 700;
-    font-family: 'Newsreader', serif;
-    line-height: 1.2em;
-    
-}
-
-h3 {
+h3, h4 {
     margin-top: 50px;
     margin-bottom: 20px;
     a {
@@ -74,6 +67,17 @@ footer {
             color: $deep-grey;
         }
     }
+}
+
+.header-font {
+    font-weight: 700;
+    font-family: 'Newsreader', serif;
+    line-height: 1.2em;
+    
+}
+
+.inline-code {
+    background-color: chartreuse;
 }
 
 #main-column {

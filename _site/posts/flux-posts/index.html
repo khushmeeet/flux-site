@@ -24,6 +24,28 @@
                     </header>
                     <section id="index-section">
                         <h2>Flux Pages</h2>
+                        <p>
+                            Flux page defines a webpage, whose content is written in markdown. It is mostly used for blog posts. Every flux page is defined inside a folder. Folder name can be anything, but is preferred to name after the page title. Each page folder has a markdown file and assets(images or any other file, that is specific to that post).
+                        </p>
+                        <p>Here is a sample flux page directory:</p>
+                        <pre style="color:#f8f8f2;background-color:#282a36">
+                            .
+                            └── flux-posts
+                                    ├── General_flux_diagram.svg.png
+                                    └── flux-posts.md 
+                        </pre>
+                        <h4>Frontmatter</h4>
+                        <p>
+                            Every markdown file has to contain frontmatter section at the top of the file to define content metadata, enclosed between two <code>---</code> . There are two fields that are mandatory in frontmatter, <code>title</code> and <code>template</code>. If these two fields are not present, <code>flux build</code> command will fail.
+                        </p>
+                        <p>You can add other fields like <code>date</code>, <code>category</code> etc, depending on the requirement. Lists and other structures can also be added to the frontmatter, as it is essentially a YAML structure.
+                        </p>
+                        <p>Here is a sample frontmatter:</p>
+                        <pre style="color:#f8f8f2;background-color:#282a36">--- <span style="color:#ff79c6">template</span>: post <span style="color:#ff79c6">title</span>: How to run upspin on GCE <span style="color:#ff79c6">shortie</span>: Tutorial on how to setup upspinserver on Google Compute Engine <span style="color:#ff79c6">categories</span>: data <span style="color:#ff79c6">tags</span>:
+                              Upspin
+                              File sharing
+                            --- 
+                        </pre>
                     </section>
                     <footer>
                         <p>Project by 
